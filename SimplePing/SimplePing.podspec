@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   # spec.description  = 
 
-  spec.homepage     = "https://github.com/iRemark/ShadowPath-Example"
+  spec.homepage     = "https://github.com/iRemark/Ping-Example"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -78,8 +78,8 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  # spec.source       = { :git => "https://github.com/iRemark/ShadowPath-Example.git", :tag => "#{spec.version}" }
-    spec.source       = { :git => "" }
+  spec.source       = { :git => "https://github.com/iRemark/Ping-Example", :tag => "#{spec.version}" }
+
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

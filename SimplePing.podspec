@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/iRemark/Ping-Example", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/iRemark/Ping-Example.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,7 +90,7 @@ Pod::Spec.new do |spec|
   #
 
  
-    spec.source_files  = "Classes/**/*.{h,m}"
+    spec.source_files  = "SimplePing/*.{h,m}"
     # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"

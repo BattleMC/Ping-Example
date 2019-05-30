@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13850BBE22A011EC00BC82E2 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 13850BBD22A011EC00BC82E2 /* SimplePing.m */; };
 		13EE421B229E871E0058B0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE421A229E871E0058B0D2 /* AppDelegate.swift */; };
 		13EE421D229E871E0058B0D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE421C229E871E0058B0D2 /* ViewController.swift */; };
 		13EE4220229E871E0058B0D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EE421E229E871E0058B0D2 /* Main.storyboard */; };
@@ -16,8 +17,6 @@
 		13EE423B229E87200058B0D2 /* Ping_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE423A229E87200058B0D2 /* Ping_ExampleUITests.swift */; };
 		13EE424D229E87370058B0D2 /* JFPingServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE424A229E87370058B0D2 /* JFPingServices.swift */; };
 		13EE424F229E87370058B0D2 /* JFPingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE424C229E87370058B0D2 /* JFPingManager.swift */; };
-		13EE425C229E909F0058B0D2 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 13EE425A229E909F0058B0D2 /* SimplePing.m */; };
-		13EE425D229E909F0058B0D2 /* SimplePing.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 13EE425B229E909F0058B0D2 /* SimplePing.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13850BBC22A011EC00BC82E2 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		13850BBD22A011EC00BC82E2 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
 		13EE4217229E871E0058B0D2 /* Ping-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ping-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EE421A229E871E0058B0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13EE421C229E871E0058B0D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,9 +54,6 @@
 		13EE423C229E87200058B0D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13EE424A229E87370058B0D2 /* JFPingServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPingServices.swift; sourceTree = "<group>"; };
 		13EE424C229E87370058B0D2 /* JFPingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JFPingManager.swift; sourceTree = "<group>"; };
-		13EE4259229E909F0058B0D2 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
-		13EE425A229E909F0058B0D2 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
-		13EE425B229E909F0058B0D2 /* SimplePing.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimplePing.podspec; sourceTree = "<group>"; };
 		13EE425E229E90F30058B0D2 /* Ping-Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ping-Example-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,10 +82,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13850BBB22A011EC00BC82E2 /* SimplePing */ = {
+			isa = PBXGroup;
+			children = (
+				13850BBC22A011EC00BC82E2 /* SimplePing.h */,
+				13850BBD22A011EC00BC82E2 /* SimplePing.m */,
+			);
+			path = SimplePing;
+			sourceTree = "<group>";
+		};
 		13EE420E229E871E0058B0D2 = {
 			isa = PBXGroup;
 			children = (
-				13EE4257229E909F0058B0D2 /* SimplePing */,
+				13850BBB22A011EC00BC82E2 /* SimplePing */,
 				13EE4219229E871E0058B0D2 /* Ping-Example */,
 				13EE422E229E87200058B0D2 /* Ping-ExampleTests */,
 				13EE4239229E87200058B0D2 /* Ping-ExampleUITests */,
@@ -137,24 +144,6 @@
 				13EE423C229E87200058B0D2 /* Info.plist */,
 			);
 			path = "Ping-ExampleUITests";
-			sourceTree = "<group>";
-		};
-		13EE4257229E909F0058B0D2 /* SimplePing */ = {
-			isa = PBXGroup;
-			children = (
-				13EE4258229E909F0058B0D2 /* Classes */,
-				13EE425B229E909F0058B0D2 /* SimplePing.podspec */,
-			);
-			path = SimplePing;
-			sourceTree = "<group>";
-		};
-		13EE4258229E909F0058B0D2 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				13EE4259229E909F0058B0D2 /* SimplePing.h */,
-				13EE425A229E909F0058B0D2 /* SimplePing.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +252,6 @@
 			files = (
 				13EE4225229E871F0058B0D2 /* LaunchScreen.storyboard in Resources */,
 				13EE4222229E871F0058B0D2 /* Assets.xcassets in Resources */,
-				13EE425D229E909F0058B0D2 /* SimplePing.podspec in Resources */,
 				13EE4220229E871E0058B0D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +280,7 @@
 				13EE421D229E871E0058B0D2 /* ViewController.swift in Sources */,
 				13EE424D229E87370058B0D2 /* JFPingServices.swift in Sources */,
 				13EE421B229E871E0058B0D2 /* AppDelegate.swift in Sources */,
-				13EE425C229E909F0058B0D2 /* SimplePing.m in Sources */,
+				13850BBE22A011EC00BC82E2 /* SimplePing.m in Sources */,
 				13EE424F229E87370058B0D2 /* JFPingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
